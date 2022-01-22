@@ -1,2 +1,3 @@
-# nitroci-plugins
+# NitroCI Plugins
+
 Nitro CI - Plugins
