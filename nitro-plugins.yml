@@ -3,4 +3,4 @@
   release: nitroci/nitroci-plugin-bitbucket/releases/download/{{ .Version }}/nitroci-plugin-bitbucket_{{ .Version }}_{{ .Goos }}_{{ .Goarch }}.tar.gz
 - name: jfrog
   checksum: nitroci/nitroci-plugin-jfrog/releases/download/{{ .Version }}/checksums.txt
-  release: nitroci/nitroci-plugin-jfrog/releases/download/{{ .Version }}/nitroci-plugin-jfrog{{ .Version }}_{{ .Goos }}_{{ .Goarch }}.tar.gz
+  release: nitroci/nitroci-plugin-jfrog/releases/download/{{ .Version }}/nitroci-plugin-jfrog_{{ .Version }}_{{ .Goos }}_{{ .Goarch }}.tar.gz
