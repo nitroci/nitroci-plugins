@@ -1,10 +1,6 @@
 - name: bitbucket
-  registry: github
-  manifest: nitroci/nitroci-plugin-bitbucket/blob/{{ version }}/manifest.yml
   checksum: nitroci/nitroci-plugin-bitbucket/releases/download/{{ version }}/checksums.txt
   release: nitroci/nitroci-plugin-bitbucket/releases/download/{{ version }}/nitroci-plugin-bitbucket_{{ version }}_{{ goos }}_{{ goarch }}.tar.gz
 - name: jfrog
-  registry: github
-  manifest: nitroci/nitroci-plugins-jfrog/blob/{{ version }}/manifest.yml
   checksum: nitroci/nitroci-plugin-jfrog/releases/download/{{ version }}/checksums.txt
   release: nitroci/nitroci-plugin-jfrog/releases/download/{{ version }}/nitroci-plugin-jfrog{{ version }}_{{ goos }}_{{ goarch }}.tar.gz
