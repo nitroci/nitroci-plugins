@@ -1,6 +1,15 @@
-- name: bitbucket
-  checksum: nitroci/nitroci-plugin-bitbucket/releases/download/{{ .Version }}/checksums.txt
-  release: nitroci/nitroci-plugin-bitbucket/releases/download/{{ .Version }}/nitroci-plugin-bitbucket_{{ .Version }}_{{ .Goos }}_{{ .Goarch }}.tar.gz
-- name: jfrog
-  checksum: nitroci/nitroci-plugin-jfrog/releases/download/{{ .Version }}/checksums.txt
-  release: nitroci/nitroci-plugin-jfrog/releases/download/{{ .Version }}/nitroci-plugin-jfrog_{{ .Version }}_{{ .Goos }}_{{ .Goarch }}.tar.gz
+settings:
+ os:
+  replacements:
+   darwin: Darwin
+   linux: Linux
+   windows: Windows
+   386: i386
+   amd64: x86_64
+packages:
+ - name: bitbucket
+   checksum: nitroci/nitroci-plugin-bitbucket/releases/download/{{ .Version }}/checksums.txt
+   release: nitroci/nitroci-plugin-bitbucket/releases/download/{{ .Version }}/nitroci-plugin-bitbucket_{{ .Version }}_{{ .Goos }}_{{ .Goarch }}.tar.gz
+ - name: jfrog
+   hecksum: nitroci/nitroci-plugin-jfrog/releases/download/{{ .Version }}/checksums.txt
+   release: nitroci/nitroci-plugin-jfrog/releases/download/{{ .Version }}/nitroci-plugin-jfrog_{{ .Version }}_{{ .Goos }}_{{ .Goarch }}.tar.gz
